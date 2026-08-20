@@ -66,11 +66,7 @@ Enums limit a field to specific values. Example:
 - One **Incident** → one **FlagReview** — each flagged incident is reviewed once.
 - One **Admin** → many **FlagReviews** — an admin can review many incidents.
 
-**Simple system flow**
 
-```
-User → accesses Record → Incident is created → if suspicious → Admin creates FlagReview
-```
 
 ## Wireframes
 
