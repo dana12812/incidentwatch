@@ -74,3 +74,64 @@ Enums limit a field to specific values. Example:
 
 [View the wireframes on Excalidraw](https://excalidraw.com/#json=AUKIPmlKrP68rF9nO14xY,J8MK6JbU6qrHuVqRra6vnA)
 
+## Folder Structure
+
+```text
+incidentwatch/
+├── config/
+│   └── database.js
+│
+├── controllers/
+│   ├── authCtrl.js
+│   ├── recordsCtrl.js
+│   ├── incidentsCtrl.js
+│   └── usersCtrl.js
+│
+├── middleware/
+│   ├── addUserToViews.js
+│   ├── isSignedIn.js
+│   └── isAdmin.js
+│
+├── models/
+│   ├── user.js
+│   ├── record.js
+│   ├── incident.js
+│   └── flagReview.js
+│
+├── node_modules/ - will be removed by .gitignore
+│
+├── public/
+│   └── stylesheets/
+│       └── style.css
+│
+├── views/
+│   ├── auth/
+│   │   ├── sign-in.ejs
+│   │   └── sign-up.ejs
+│   │
+│   ├── records/
+│   │   ├── edit.ejs
+│   │   ├── index.ejs
+│   │   ├── new.ejs
+│   │   └── show.ejs
+│   │
+│   ├── incidents/
+│   │   ├── index.ejs
+│   │   └── show.ejs
+│   │
+│   ├── users/
+│   │   ├── index.ejs
+│   │   └── show.ejs
+│   │
+│   ├── partials/
+│   │   ├── _nav.ejs
+│   │   └── _sidebar.ejs
+│   │
+│   └── index.ejs
+│
+├── .env - will be removed by .gitignore
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+└── server.js
